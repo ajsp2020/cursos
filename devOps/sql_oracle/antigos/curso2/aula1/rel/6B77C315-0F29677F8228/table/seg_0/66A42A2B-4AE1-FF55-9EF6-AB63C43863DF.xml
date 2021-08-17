@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66A42A2B-4AE1-FF55-9EF6-AB63C43863DF" schemaObject="6016BDDF-4AEA-6334-1F98-67FCF5D1CA9B" name="NOTAS_FISCAIS">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>NOTAS_FISCAIS</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:42 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CPF" id="3A5D7CC5-3A53-06E0-BB9C-23B9CF950F64">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>NOTAS_FISCAIS</sourceObjSchema>
+<sourceObjName>CPF</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:42 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6199B7C4-62A3-219C-22F3-982A767D3B09" referredColumn="77A19B22-CD8A-9BD9-951F-45A820AA436A"/>
+</associations>
+</Column>
+<Column name="MATRICULA" id="8704B880-905D-D18D-EA52-14DECE9F48CE">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>NOTAS_FISCAIS</sourceObjSchema>
+<sourceObjName>MATRICULA</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:42 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0C9D8B1-BCA1-AD47-7879-C81458B19CCF" referredColumn="C188B68D-64A9-56BB-4BEC-42EC4D4C6DEA"/>
+</associations>
+</Column>
+<Column name="DATA_VENDA" id="6C81A6C3-733A-A10C-B002-3FF70A6DC74A">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>NOTAS_FISCAIS</sourceObjSchema>
+<sourceObjName>DATA_VENDA</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:42 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO" id="D82B8176-1CEA-9518-C1D2-1F3229D0FC45">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>NOTAS_FISCAIS</sourceObjSchema>
+<sourceObjName>NUMERO</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:42 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMPOSTO" id="823E4465-4977-EFEC-FD4B-AEEFBCCF9B5A">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>NOTAS_FISCAIS</sourceObjSchema>
+<sourceObjName>IMPOSTO</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:42 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D3879AF-4FED-6E45-8497-D5079299A753" name="PK_NOTAS_FISCAIS">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PK_NOTAS_FISCAIS</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:42 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D82B8176-1CEA-9518-C1D2-1F3229D0FC45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FDC1D1D-96B7-069F-8146-FC22F18EA751" schemaObject="6016BDDF-4AEA-6334-1F98-67FCF5D1CA9B" name="PK_NOTAS_FISCAIS">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PK_NOTAS_FISCAIS</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:42 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D82B8176-1CEA-9518-C1D2-1F3229D0FC45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E9CE59F-0837-FD8E-8EA2-BDE056EC3814" name="FK_NOTAS_FISCAIS1">
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:42 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8704B880-905D-D18D-EA52-14DECE9F48CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE730565-06BC-75CE-9817-BABB528FF0C7" name="FK_NOTAS_FISCAIS2">
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:42 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A5D7CC5-3A53-06E0-BB9C-23B9CF950F64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

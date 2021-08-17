@@ -1,0 +1,1 @@
+ssh -i "aws-ajpereira.pem" ec2-user@ec2-3-16-130-211.us-east-2.compute.amazonaws.com

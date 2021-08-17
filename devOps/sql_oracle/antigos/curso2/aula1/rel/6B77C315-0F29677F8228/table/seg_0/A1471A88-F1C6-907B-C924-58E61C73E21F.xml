@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1471A88-F1C6-907B-C924-58E61C73E21F" schemaObject="6016BDDF-4AEA-6334-1F98-67FCF5D1CA9B" name="TABELA_DE_PRODUTOS">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>TABELA_DE_PRODUTOS</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:36:44 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_DO_PRODUTO" id="AB508738-F827-AD30-CFD1-9E15A3A825E4">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_PRODUTOS</sourceObjSchema>
+<sourceObjName>CODIGO_DO_PRODUTO</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:36:44 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_DO_PRODUTO" id="4DA1CB67-351B-859E-D21D-03CAB08F9B12">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_PRODUTOS</sourceObjSchema>
+<sourceObjName>NOME_DO_PRODUTO</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:36:44 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMBALAGEM" id="EBBF1873-7DFC-3553-6A5D-33AF15E0685A">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_PRODUTOS</sourceObjSchema>
+<sourceObjName>EMBALAGEM</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:36:44 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAMANHO" id="694775B2-50AA-A658-71BA-42EBB1D29809">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_PRODUTOS</sourceObjSchema>
+<sourceObjName>TAMANHO</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:36:44 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SABOR" id="725211B2-3912-162F-28AD-8FCDD9397EA0">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_PRODUTOS</sourceObjSchema>
+<sourceObjName>SABOR</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:36:44 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECO_DE_LISTA" id="432D67F1-2096-0969-768E-EEAE2E00DD91">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_PRODUTOS</sourceObjSchema>
+<sourceObjName>PRECO_DE_LISTA</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:36:44 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CE9AF5A-21D4-6040-D079-008418775A5E" name="PK_TABELA_DE_PRODUTOS">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PK_TABELA_DE_PRODUTOS</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:36:44 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB508738-F827-AD30-CFD1-9E15A3A825E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="571F36BA-F799-2BC8-060A-88B4C64B33F3" schemaObject="6016BDDF-4AEA-6334-1F98-67FCF5D1CA9B" name="PK_TABELA_DE_PRODUTOS">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PK_TABELA_DE_PRODUTOS</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:36:44 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB508738-F827-AD30-CFD1-9E15A3A825E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

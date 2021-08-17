@@ -1,0 +1,254 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="728CB061-C3B3-A69B-F2A6-201CCD2083E2" schemaObject="6016BDDF-4AEA-6334-1F98-67FCF5D1CA9B" name="TABELA_DE_CLIENTES">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>TABELA_DE_CLIENTES</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CPF" id="77A19B22-CD8A-9BD9-951F-45A820AA436A">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>CPF</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="E9D2C92A-4C9A-F0C2-FD21-F5511CD15743">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>NOME</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENDERECO_1" id="3B04423B-046B-748B-4F9E-FF83B858E363">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>ENDERECO_1</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENDERECO_2" id="998DEB3E-C70B-2B80-DE6C-F1CF8A9DB26B">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>ENDERECO_2</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BAIRRO" id="05AF2EFA-A412-C7F9-BCFB-99B955624A13">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>BAIRRO</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIDADE" id="4082ACB5-FE88-E34F-71AF-65E1CE5D20BE">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>CIDADE</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO" id="6A68F1E4-211C-3435-81C0-6AD5F29D0FDC">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>ESTADO</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP" id="3DC46A9F-800B-9EE0-D918-1588CD460E3B">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>CEP</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_DE_NASCIMENTO" id="E401ADF4-CE5F-C8E3-A6C8-A9770036DF0B">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>DATA_DE_NASCIMENTO</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDADE" id="E79CAAF0-E37A-E3E9-3FBB-DD655E63E785">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>IDADE</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEXO" id="23BBC6B3-0D4A-8623-6335-33516B52FE97">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>SEXO</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LIMITE_DE_CREDITO" id="D77D3D50-D67A-01E6-863C-F637CA084B12">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>LIMITE_DE_CREDITO</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VOLUME_DE_COMPRA" id="3A8A8582-88BD-9D6E-7936-279480460193">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>VOLUME_DE_COMPRA</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMEIRA_COMPRA" id="0D8BAD46-B06B-11D3-13E5-71DF962C9E89">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>TABELA_DE_CLIENTES</sourceObjSchema>
+<sourceObjName>PRIMEIRA_COMPRA</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E042E3C-5139-CAD1-D6BA-CFA0AEA75739" name="PK_TABELA_DE_CLIENTES">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PK_TABELA_DE_CLIENTES</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77A19B22-CD8A-9BD9-951F-45A820AA436A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F6C5DF9-0BCA-E3DB-A486-4356073CA7FB" schemaObject="6016BDDF-4AEA-6334-1F98-67FCF5D1CA9B" name="PK_TABELA_DE_CLIENTES">
+<sourceConnName>CONEX%C3%83O+ORACLE+XE</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PK_TABELA_DE_CLIENTES</sourceObjName>
+<createdBy>joao-</createdBy>
+<createdTime>2021-03-24 22:37:06 UTC</createdTime>
+<ownerDesignName>aula1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77A19B22-CD8A-9BD9-951F-45A820AA436A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

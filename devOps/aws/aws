@@ -1,0 +1,50 @@
+AWS
+
+no terminal:
+	mudar a permissão da chave:
+		chmod 400 <chave_nome>.pem
+		ls - l 
+	
+	atualizar os pacotes (na primeira vez):
+		sudo yum update
+		
+	conectar portas:
+		nas instancias clica na instancia e vai para açoes -> segurança -> adicionar ao grupo default
+		
+	verificar preço:
+		google -> EBS PREÇO.
+			-> AWS calculator
+			
+No code: <- Verificar como fazer 
+	#!/bin/bash (subir a máquina)
+	yum update -y (para atualizar)
+	amanzon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2 (adicionando alguns repositórios)
+	yum install -y httpd mariadb-server (intalando o apache e o banco de dados)
+	systemctl start httpd (inicializando o serviço)
+	systemctl enable httpd (toda vez que a maquina seja reincializada que ela suba automaticamente)
+	systemctk enable mariadb (inicializa o banco de dados)
+	usermod -a -G apache ec2-user(fazer o acerto de perimição)
+	chown -R ec2-user:apache /var/www
+	
+Verificar se o apache esta rodando:
+	netstat -ltun
+
+criar um novo grupo de acesso:
+`	security group name: acesso-web
+	description: acesso-wev
+	
+	Inbound:
+		HTTP  
+		HTTPS
+		
+		
+
+	
+	Depois pega a instancia e adiciona no security group
+	
+Criando uma imagem ( para criar uma imagem primeiro precisa parar a isntancia):
+	depois vai em action -> image -> create a image:
+		Image name: web-dev-template
+		
+	
+	
