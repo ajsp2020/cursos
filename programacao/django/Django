@@ -1,0 +1,80 @@
+Django:
+
+-> CONFIGURANDO O AMBIENTE VIRTUAL:	
+
+Criar a venv:
+	python3 -m venv ./venv
+	python -m venv ./venv
+	
+Executar a venv no windows:
+	source ./venv/bin/activate
+	./venv/scripts/activate
+	
+Para instalar o Django:=
+	pip install django
+	
+Visualizar modulos instalados:
+	pip freeze
+
+-> INICIANDO O PROJETO:
+
+Iniciando um novo projeto:
+	django-admin startproject <nome_projeto> . 
+
+__init__.py -> Arquivo vazio que diz que este diretório deve ser considerado como um pacote.
+settings.py -> Fica contido todas as configurações relacionados ao nosso projeto
+urls.py -> Declaração de todas as URLs para o nosso projeto. 
+wsgi.py -> Ponto de integração para servidores compatíveis com esse wsgi
+
+Subindo um servidor:
+	python manage.py runserver
+	
+Criando um novo app:
+	python manage.py startapp <nome_app> 
+	
+	registrar o novo <nome_app> em settings.py 
+	acessar o novo app: 
+		no app criar um novo arquivo chamado urls.py (aplicativo)
+		em views criar o arquivo de receitas (aplicativo)
+		incluir o path no urls.py (projeto)
+		
+Criando uma nova página:
+	em <nome_app> criar uma nova pasta chamado de templates:
+		em templates criar um novo arquivo chamado de index.html
+		informar para a views que precisa renderizar a página.
+		
+Gerenciando os arquivos estáticos:
+	no <nome_projeto> ir em settings.py:
+		# OBS: importar o os
+		TEMPLATES = [
+		`DIRS`: [os.path.join(BASE_DIR, `<nome_app>/templates`)],
+		]
+		
+		# Precisamos agora especificar para o django aonde estão os arquivos estáticos
+		# Para isso é preciso criar:
+		
+		STATIC_ROOT = os.path.join(BASE_DIR, `static`) # Aonde vou deixar meus arquivos estáticos
+		STATIC_URL = `/static/`
+		STATICFILES_DIRS = [
+			# OBS: Criar o arquivo `static` no <nome_projeto> 
+			os.path.join(BASE_DIR, `<nome_projeto>/static`)     # Onde acho os aquivos estáticos
+		
+Referenciando os arquivos estáticos:
+	no terminar:
+		python manage.py collectstatic
+		
+
+No aquivo html:
+	# Precisamos dizer que possue arquivos python para isso:
+	{% load static %}
+	alterar os caminhos de modo que referencie o arquivo # Para carregar os arquivos estáticos é preciso informar
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
