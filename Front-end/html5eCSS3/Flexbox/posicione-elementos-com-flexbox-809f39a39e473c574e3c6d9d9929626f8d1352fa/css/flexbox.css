@@ -1,0 +1,8 @@
+.cabecalhoPrincipal .container { /* Pega a tag .conteiner que está dentro do cabeçalho principal */
+    display: flex; /* Display o conteúdo de forma flex */
+    align-items: center; /* Alinha os itens verticalmete no centro */
+    justify-content: space-between; /* Cria o espaço entre os objetos */
+}
+.cabecalhoPrincipal-nav{
+    display: flex;
+}

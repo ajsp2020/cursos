@@ -1,0 +1,269 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Para usar o estilo de fonte oferecido pelo site do google fonts em toda a página */
+
+}
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0px; /* Espaçamento interno para cima e para baixo */
+}
+.caixa {
+    position: relative; /* Para levantar a caixa */
+    width: 940px; /* Definindo uma largura fixa */
+    margin: 0 auto; /* A margem para cima e para baixo seja zero e para a direira e esquerda se calculem automaticamente */
+}
+
+nav {
+    position: absolute; /* Para mudar a posição do ponto inicial que ele se encontra */
+    top: 110px;
+    right: 0;
+
+}
+
+nav li {
+    display: inline; /* Deixa o objeto ocupando somente seu tamanho */
+    margin: 0 0 0 15px; /* Cria um espaço para a esquerda */
+}
+
+nav a {
+    text-transform: uppercase; /* Transforma o texto em maiuscula */
+    color: #000000; /* Muda a palavra de cor */
+    font-weight: bold; /* Muda o peso da fonte */
+    font-size: 22px; /* Muda o tamanho da fonte */
+    text-decoration: none; /* Tira a decoração do texto */
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /* Para alterar o espaçamento interno 50pc para cima e para baixo e 0 para os lados*/
+
+}
+
+nav a:hover {
+    color: #c78c19; /* Muda a cor do objeto quando passamos o mouse */
+    text-decoration: underline; /* Coloca um underline quando o maouse passa sobre o objeto */
+}
+
+.produtos li {
+    display: inline-block; /* Tenho o tamanho do conteúdo mas regulável */
+    text-align: center; /* Para definir o alinhamento do texto dentro da lista */
+    width: 30%; /* Para definir a largura de cada uma dos li */
+    vertical-align: top; /* Para poder alinhar pela linha de cima sendo que por default é alinhado pela linha de baixo */
+    margin:0 1.5% ; /* Espaçamento externo */
+    padding:30px 20px ; /* Espaçamento interno */
+    box-sizing: border-box; /* Para que o espaçamento lateral esteja dentro do percentual  */ 
+    border: 2px solid #000000; /*  Espessura , estilo e cor da borda  */
+    border-radius: 10px; /* deixa as bordas com formato arredondado com um raio de 10px */
+
+} 
+.produtos li:hover {
+    border-color: #c78c19; /* Muda a cor do objeto quando passa o mouse  */
+
+}
+.produtos li:hover h2 { /* Para alterar a tag h2 dentro de produtos quando se passa o mouse */
+    font-size: 34px;
+}
+
+.produtos li:active {
+    border-color: #088c19; /* Muda a cor do objeto quando se clica sobre o objeto */
+}
+
+.produtos h2 {
+    font-size: 30px; /* Alterando o tamanho da fonte */
+    font-weight: bold; /* Alterando o peso da fonte */
+}
+.produto-descricao {
+    font-size: 18px; /* Alterando o tamanho da fonte */
+}
+.produto-preco {
+    font-size: 22px; /* Alterando o tamanho da fonte */
+    font-weight: bold; /* Alterando o peso da fonte */
+    margin-top: 10px; /* Espaçamento externo de 10px para cima*/
+}
+
+footer {
+    text-align: center; /* Fazer que todo texto fique alinhado pelo centro */
+    background: url("bg.jpg"); /* Colocar uma imagem de fundo */
+    padding: 40px 0; /* Colocar um espaçamento interno de 40px */
+}
+
+.copyright {
+    color: #ffffff; /* Alterando a cor do texto */
+    font-size: 13px; /* Alterando a fonte do texto */
+    margin: 20px 0 0 0; /* Colocando uma margin entre um item e outro */
+}
+
+main {
+
+
+}
+
+form {
+    margin: 40px 0; /* Cria uma margin de 40px para cima e para baixo e zero para os lados */
+
+}
+
+form label, form legend {
+    display: block; /* Para fazer que o objeto ocupe 100% do espaço */
+    font-size: 20px; /* Alterando o tamanho da fonte */
+    margin: 0 0 10px; /* Criando uma margin para baixo de 10px */
+
+}
+
+.input-padrao {
+    display: block; /* Para fazer que o objeto ocupe 100% do espaço */
+    margin: 0 0 20px; /* Criando uma margin para baixo de 20px */
+    padding:10px 25px; /* Alterando o espaçanto interno e fazendo assim que o campo fique maior */
+    width: 50%; /* Alterando a largura do campo */ 
+}
+.checkbox {
+    margin: 20px 0;
+}
+.enviar {
+    width: 40%; /* Para alterar o tamanho do objeto */
+    padding: 15px 0; /* Para alterar o espaçamento interno */
+    background: orange; /* Para alterar a cor de fundo */
+    color: white; /* Para alterar a cor do texto */
+    font-weight: bold; /* Para alterar o peso da fonte */
+    font-size: 18px; /* Para alterar o tanhanho da fonte */
+    border: none; /* para retirar a borda padrão */
+    border-radius: 5px; /* Para deixar o canto arrendondado */
+    transition: 1s all; /* Para dar um efeito de transição. No caso fazer que a cor leve 1s para ser alterada quando se passa o mouse por cima */
+    cursor: pointer; /* Altera o cursor para uma maozinha quando passa o mouse nele */
+}
+
+.enviar:hover {
+    background: darkorange; /* Para alterar a cor de fundo quando se passa o mouse por cima do botao */
+    transform: scale(1.2); /* Neste caso para alterar o tamanho do objeto quando passamos o mouse por ele em 20% */
+   
+}
+table {
+    margin: 20px 0 40px; /* Para criar um espaçamento externo de 20px para cima e 40px para baixo */
+}
+
+thead {
+    background: #555555; /* Para alterar a cor de fundo */
+    color: white; /* Para alterar a cor desse item */
+    font-weight: bold; /* Para deixar a fonte desse item em negrito */
+}
+
+td, th {
+    border: 1px solid #000000; /* Fazer uma borda de 1px solida da cor preta */
+    padding:8px 15px; /* Criando um espaçamento interno */
+}
+
+/* css da página inicial */
+.banner {
+    width: 100%; /* Define o objeto com 100% da largura da página */
+}
+
+.titulo-principal {
+    text-align: center; /* Alinhamento para o centro */
+    font-size: 2em ; /* Altera o tamanho do texto para 2 vezes o tamanho básico da fonte*/
+    margin:0 0 1em; /* Para criar um espaçamento externo que seja proporcinal ao tamanho da fonte*/
+    clear: left ; /* Para limpar o float usado em utensilios e impedir que afete o restante da página abaixo */
+    color: rgba(0,0,0,0.3); /* Para alterar a cor e a opacidade do elemento */
+    text-shadow:2px 2px 2px #000000; /* Para criar uma sombra no texto da mesma forma das outras */
+}
+
+
+
+.principal {
+    padding: 3em 0; /* Criando um espaçamento interno de 3em para cima e para baixo e 0 para as laterais */
+    background: #fefefe; /* Para alterar a cor de fundo */
+    width: 940px; /* Define a tag main com 940px de largura */
+    margin: 0 auto; /* para centralizar o objeto sem alterar a altura */
+
+}
+
+.principal p {
+    margin: 0 0 1em; /* Cria um espaçamento externo para baixo proporcinal ao tamanho básico da fonte */
+}
+
+.principal strong {
+    font-weight:bold; /* Alterando o peso da fonte */
+}
+
+.principal em {
+    font-style: italic; /* Alterando o estilo da fonte para itálico */
+}
+
+.utensilios {
+    width: 120px; /* Para definir a largura do objeto */
+    float: left; /* Descola o objeto da página mas cria uma sombra abaixo que faz com que o texto orbite em volta */
+    margin: 0 20px 20px 0; /* Colocando um espaçamento externo de 20px para cada lado */
+} 
+
+.mapa {
+    padding:3em 0 ; /* Criando um espaçamento interno proporcinal ao tamanho da fonte do meu site*/
+    background:linear-gradient(#fefefe, #888888) ; /* Para alterar a cor de fundo do elemento de forma de degrade de forma linear */
+}
+
+.mapa-conteudo {
+    width: 940px; /* Define a tag main com 940px de largura */
+    margin: 0 auto; /* para centralizar o objeto sem alterar a altura */
+}
+
+.mapa p {
+    margin: 0 0 2em; /* Cria um espaçamento externo proporcional ao tamanho da fonte base para baixo */
+    text-align: center; /* Alinhando o texto para o centro da página */
+}
+
+.beneficios {
+    padding: 3em 0; /* Criando um espaçamento interno proporcional ao tamanho da fonte base para baixo */
+    background: #888888; /* Alterando a cor de fundo */
+    box-shadow: inset 0 0 30px #000000; /* Para adicionar uma sombra interna (X Y espaçamento cor) */
+}
+
+.conteudo-beneficios {
+    width:640px ; /* Para definir a largura do objeto */
+    margin:0 auto; /* Para definir o espaçamento externo do objeto */
+    
+} 
+
+.lista-beneficios {
+    width:40%; /* Para definir a largura do objeto */
+    display: inline-block; /* Para o espaço ocupar o tamanho do objeto de forma regulavel? */
+    vertical-align: top; /* Para alinhar o objeto pela parte de cima */
+}
+.itens {
+    line-height: 1.5; /* Para alterar a altura da linha */
+}
+.itens:first-child { /* Para conseguir selecionar elementos específicos como uma classe pseudo-elemento */
+    font-weight: bold; /* Para mudar o peso da fonta para negrito */
+}
+.itens:before { /* Quando queremos criar um elemento na página, via CSS, antes do elemento do HTML, usamos a propriedade :before. */
+    content: "🟊 "; /* Para colocar uma estrela antes do conteudo via css */
+}
+
+.imagem-beneficios {
+    width: 60%; /* Altera a largura do objeto para 60%  da largura da página*/
+    opacity:1; /* Para alterar a opacidade de um elemento */
+    transition: 400ms; /* Fazer uma transição da ação do elemento de 400 ms */
+    box-shadow: 10px 10px 10px 0px #000000 ; /* Para criar uma sombra embaixo do elemento eixo (X Y) espalhamento intencidade da borda e cor (colocando uma virgula depois da cor pode colocar outras sombras) */
+} 
+.imagem-beneficios:hover {
+    opacity: 0.3; /* Para alterar a opacidade do elemento */
+}
+
+.video {
+    width: 560px; /* Largura de 560px */
+    margin: 2em auto; /* Cria o espaçamento externo proporcinal ao tamanho base da fonte para cima e para baixo e automático para os lados */
+}
+
+/* Para tornar o site responsivo */
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
