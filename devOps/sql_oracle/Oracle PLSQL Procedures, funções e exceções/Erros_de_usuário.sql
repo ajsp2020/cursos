@@ -23,6 +23,6 @@ BEGIN
 EXCEPTION
 
     WHEN e_CLIENTE_ID_INEXISTENTE THEN
-        RAISE_APPLICATION_ERROR(-20100, 'Cliente inexistente!!!') -- 5-> Escreve a mensagem de erro. 
+        RAISE_APPLICATION_ERROR(-20100, 'Cliente inexistente!!!'); -- 5-> Escreve a mensagem de erro. 
         
 END;
