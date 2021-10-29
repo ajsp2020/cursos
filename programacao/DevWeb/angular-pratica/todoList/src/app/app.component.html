@@ -1,0 +1,20 @@
+<h1 id="todo-header">ToDo List</h1>
+<hr>
+<input 
+    type="text"
+    class="form-control"
+    [(ngModel)]="serverName">
+
+<button 
+    id="todo-add"
+    (click)="onCreateList()"
+    >Add</button>
+<hr>
+<ol id=todo-Ul>
+    <li *ngFor="let todo of lista">{{this.todo}}</li>
+</ol>
+
+<button 
+    id="todo-clear"
+    (click)="onClearList()"
+    >Clear</button>

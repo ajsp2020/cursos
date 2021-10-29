@@ -1,0 +1,25 @@
+<nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <p class="logo-name">Residencial Giardino Michelangelo</p>
+        </div>
+        <!-- Nav Menu -->
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" appDropdown>
+            <label for="checkbox_toggle" class="hamburger" appDropdown>&#9776;</label>
+            <div class="menu">
+                <li><a href="#" (click)="onSelect('home')">Home</a></li>
+                <li><a href="#" (click)="onSelect('about')">About</a></li>
+                <li><a href="#" >Informações</a></li>
+                <li class="services" appDropdown>
+                    <a href="#">Reservas</a>
+                    <ul class="menu-dropdown" >
+                        <li><a href="#">Salão de festa</a></li>
+                        <li><a href="#">Salão gourmet</a></li>
+                        <li><a href="#">Churrasqueira</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#" class="nenu-link">Login</a></li>
+            </div>
+        </ul>
+</nav>

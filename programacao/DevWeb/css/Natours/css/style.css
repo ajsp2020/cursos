@@ -1,0 +1,178 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+/* Basic Reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      font-family: "Lato", sans-serif;
+      font-weight: 400; 
+      font-size: 16px;
+      line-height: 1.7;
+      color: #777;
+      padding: 30px; /* 30px to make the container go all the way to the bottom of the topbar */
+  }
+  /* End Basic Reset */
+  
+  /* Topbar */
+  .header {
+      height: 95vh; /* The height of this elemente should be 95% of the viewport height */
+      background-image: linear-gradient(
+          to right bottom,
+          #7ed56fc2, 
+          #28b485b9), 
+          url(../img/hero.jpg);
+      background-size: cover; /* This will cover the entire background */
+      background-position: top; /* This is garanty that the image will be in the top */;
+      position: relative; /* The reference where top and left start to count */
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* This will make the image to be cutted at the botton */
+  }
+ 
+
+  
+  .logo-box{
+      position: absolute; /* This will make the logo box to be fixed */
+      top: 40px; /* 40px to make the logo box go all the way to the top of the topbar */
+      left: 40px; /* 40px to make the logo box go all the way to the left of the topbar */
+  }
+  .logo {
+      height: 35px; /* The height of this elemente should be 35px */
+
+  }
+  
+  .text-box {
+      position: absolute; /* This will make the text box to be fixed */
+      top: 40%; /* 40% to make the text box go all the way to the top of the topbar */
+      left: 50%; /* 50% to make the text box go all the way to the left of the topbar */
+      transform: translate(-50%, -50%); /* This will make the text box to be in the center of the topbar */
+      text-align: center; /* This will make the text to be in the center of the topbar */
+    }
+    .heading-primary {
+        color: #FFF; /* This will make the text white */
+        text-transform: uppercase; /* This will make the text uppercase */
+        backface-visibility: hidden; /* This will make the text to be hidden when the user scrolls backwards */
+        margin-bottom: 60px; /* 60px to make the text go all the way to the bottom of the topbar */
+    }
+    .heading-primary--main {
+        display: block; /* This will make the text to be displayed as a block */
+        font-size: 60px; /* This will make the text to be 60px */
+        font-weight: 400;  /* This will make the text to be 400 */
+        letter-spacing: 35px; /* This will make the text to have 35px of spacing */
+
+        animation: moveInLeft 3s; /* This will make the text to move in from the left */
+        animation-timing-function: ease-out; /* This will make the animation to be ease out */
+
+        /* 
+          animation-delay: 3s;   /* This will make the text to move in after 3s 
+          
+          animation-iteration-count: 3; /* This will make the text to move in 3 times 
+
+        */   
+      
+
+    }
+    .heading-primary--sub {
+        display: block; /* This will make the text to be displayed as a block */
+        font-size: 20px; /* This will make the text to be 20px */
+        font-weight: 700;  /* This will make the text to be 400 */
+        letter-spacing: 17.4px; /* This will make the text to have 10px of spacing */
+        animation: moveInRight 3s ease-out; /* This will make the text to move in from the right */
+    }
+    @keyframes moveInLeft {
+        0% {
+            opacity: 0; /* This will make the text to be invisible */
+            transform: translateX(-100px); /* This will make the text to be in the left side of the screen */
+        }
+    
+
+        80% {
+            transform: translateX(10px); /* This will make the text to be in the left side of the screen */
+        }
+
+        100% {
+            opacity: 1; /* This will make the text to be visible */
+            transform: translateX(0); /* This will make the text to be in the center of the screen */
+        }
+    }
+
+    @keyframes moveInRight {
+        0% {
+            opacity: 0; /* This will make the text to be invisible */
+            transform: translateX(100px); /* This will make the text to be in the left side of the screen */
+        }
+
+        80% {
+            transform: translateX(-10px); /* This will make the text to be in the left side of the screen */
+        }
+
+        100% {
+            opacity: 1; /* This will make the text to be visible */
+            transform: translateX(0); /* This will make the text to be in the center of the screen */
+        }
+    }
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0; /* This will make the text to be invisible */
+            transform: translateY(30px); /* This will make the text to be in the left side of the screen */
+        }
+
+        100% {
+            opacity: 1; /* This will make the text to be visible */
+            transform: translateX(0); /* This will make the text to be in the center of the screen */
+        }
+    }
+    .btn:link, 
+    .btn:visited {
+        text-transform: uppercase; /* This will make the text uppercase */
+        text-decoration: none; /* This will remove the underline from the text */
+        padding: 15px 40px;  /* This will make the button to have 15px of padding on the left and right */
+        display: inline-block;  /* This will make the button to be displayed as an inline element */
+        border-radius: 100px; /* This will make the button to have a 100px radius */
+        transition: all .2s; /* This will make the button to have a transition effect */
+        position: relative; /* This will make the button to be relative to the topbar */
+
+    } 
+    .btn:hover {
+        transform: translateY(-3px); /* This will make the button to move 3px down when the user hovers over it */
+        box-shadow: 0 10px 20px rgba(0,0,0,.2); /* This will make the button to have a shadow when the user hovers over it */
+    }
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 20px rgba(0,0,0,.2); /* This will make the button to have a shadow when the user clicks on it */
+    }
+    .btn--white {
+        background-color: #FFF;
+        color: #000;
+    }
+    .btn::after {
+        content: ""; /* This will make the button to have a content */
+        display: inline-block; /* This will make the button to be displayed as an inline element */
+        height: 100%; /* This will make the button to have a height of 100% */
+        width: 100%; /* This will make the button to have a 100% width */
+        border-radius: 100px; /* This will make the button to have a 100px radius */
+        position: absolute; /* This will make the button to be relative to the topbar */
+        top: 0; /* This will make the button to be in the top of the button */
+        left: 0; /* This will make the button to be in the left side of the screen */
+        z-index: -1; /* This will make the button to be behind the text */
+        transition: all .4s; /* This will make the button to have a transition effect */
+    }
+    .btn--white::after {
+        background-color: #fff;
+    }
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6); /* This will make the button to have a scale effect when the user hovers over it */
+        opacity: 0; /* This will make the button to be transparent when the user hovers over it */
+    }
+
+    .btn--animated {
+        animation: moveInBottom .5s ease-out .75s; /* This will make the button to move in from the bottom */
+        animation-fill-mode: backwards; /* This will make the button to move in from the bottom */
+    }

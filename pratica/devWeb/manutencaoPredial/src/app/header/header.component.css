@@ -1,0 +1,119 @@
+a {
+    text-decoration: none; /* no underline */
+}
+li {
+    list-style: none; /* no list bullets */
+}
+.navbar {
+    display: flex; /* use this to make the navbar flex */
+    align-items: center; /* align the navbar items vertically */
+    justify-content: space-between; /* align the navbar items horizontally */
+    /* padding: 20px;  add some padding */
+    background-color: teal; /* set the background color */
+}
+.nav-links a {
+    color: #fff; /* change the color of the navbar links */
+}
+.logo {
+    font-size: 25px; /* change the font size */
+    font-family: monospace;
+    color: #fff; /* change the color of the logo */
+    margin-left: 10px; /* add some margin */
+
+}
+.menu {
+    display: flex; /* use this to make the navbar flex */
+    gap: 1em; /* gap between the navbar items */
+    font-size: 18px; /* change the font size */
+}
+.menu li:hover {
+    background-color: #4c9e9e; /* change the background color on hover */
+    border-radius: 5px; /* add a border radius */
+    transition: 0.3 ease; /* add a transition */
+}
+.menu li {
+    padding: 20px 14px; /* add some padding */
+
+}
+.menu-dropdown {
+    background-color: rgb(1, 139, 139); /* change the background color */
+    padding: 1em 0; /* add some padding */
+    position: absolute; /* make the dropdown absolute */
+    display: none; /* hide the dropdown */
+    border-radius: 8px; /* add a border radius */
+    top: 35px; /* set the top position */
+}
+
+.menu-dropdown li + li {
+    margin-top: 10px; /* add some margin */
+}
+.menu-dropdown li {
+    padding: 0.5em 1em; /* add some padding */
+    width: 8em; /* set the width */
+    text-align: center; /* center the text */
+}
+.menu-dropdown li:hover {
+    background-color: #4c9e9e; /* change the background color on hover */
+    border-radius: 5px; /* add a border radius */
+    transition: 0.3 ease; /* add a transition */
+}
+.show {
+    display: block; /* show the dropdown */
+}
+/* check box hack */
+input[type="checkbox"] {
+    display: none; /* hide the checkbox */
+}
+/* Hamburguer menu */
+.hamburger {
+    display: none; /* hide the hamburguer menu */
+    font-size: 24px; /* change the font size */
+    user-select: none; /* disable the user to select the text */
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 1000px){
+    .menu {
+        display: none; /* hide the navbar */
+        position: absolute; /* make the navbar absolute */
+        background-color: teal; /* set the background color */
+        right: 0; /* set the right position */
+        left: 0; /* set the left position */
+        text-align: center; /* center the text */
+        padding: 16px 0; /* add some padding */
+    }
+    .menu li:hover{
+        display: inline-block; /* show the navbar items on hover */
+        background-color: #4c9e9e; /* change the background color on hover */
+        transition: 0.3s ease; /* add a transition */
+    }
+    .logo{
+        padding: 20px; /* add some padding */
+    }
+    
+
+    .menu li + li {
+        margin-top: 12px; /* add some margin */
+    }
+    input[type="checkbox"]:checked ~ .menu {
+       /* display: inline-block; /* show the checkbox */
+    }
+    .show ~ .menu {
+        display: inline-block; /* show the dropdown */
+        width: 150px; 
+    }
+    .hamburger {
+        display: inline-block; /* show the hamburguer menu */
+        margin: 10px; /* add some padding */
+       
+       
+    }
+    .menu-dropdown {
+        left: 50%; /* set the left position */
+        top: 30px; /* set the top position */
+        transform: translateX(35%); /* set the transform */
+    }
+    .menu-dropdown li:hover {
+        background-color: #4c9e9e; /* change the background color on hover */
+    }
+
+}

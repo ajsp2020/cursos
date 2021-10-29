@@ -28,7 +28,7 @@ public class TestaCurso {
 		
 		
 		List<Aula> aulasImutaveis = javaColecoes.getAulas();
-		System.out.println(aulasImutaveis);
+		//System.out.println(aulasImutaveis);
 		
 		
 		// Ordenando a lista
@@ -44,10 +44,10 @@ public class TestaCurso {
 		List<Aula> aulas = new ArrayList<>(aulasImutaveis);
 		
 		Collections.sort(aulas);
-		System.out.println(aulas);
-		System.out.println(javaColecoes.getTempoTotal());
+		//System.out.println(aulas);
+		//System.out.println(javaColecoes.getTempoTotal());
 		
-		System.out.println(javaColecoes);
+		//System.out.println(javaColecoes);
 		
 		
 		
